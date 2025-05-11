@@ -1,6 +1,6 @@
 {
   "name": "discord-meeting-bot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Discord bot that records meetings, transcribes them, and generates summaries using ChatGPT",
   "main": "index.js",
   "scripts": {
