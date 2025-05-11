@@ -66,12 +66,6 @@ A Discord bot that joins voice channels, records meetings, transcribes them, and
    - `/record-meeting`: Join your current voice channel and start recording
    - `/end-meeting`: Stop the recording, process it, and generate a summary
 
-## Limitations
-
-- In this version, the speech-to-text transcription is simulated
-- For a production version, you would need to implement a proper speech-to-text API (like Google Cloud Speech-to-Text, AWS Transcribe, or OpenAI's Whisper API)
-- The bot may not handle very large recordings efficiently
-
 ## License
 
 MIT
