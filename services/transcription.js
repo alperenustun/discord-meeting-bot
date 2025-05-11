@@ -22,10 +22,6 @@ const openai = new OpenAI({
  * @returns {Promise<string>} - Transcribed text
  */
 export async function transcribeAudio(audioPath, username) {
-  // In a real implementation, you would:
-  // 1. Convert PCM to a format supported by Whisper (like mp3 or wav)
-  // 2. Call the Whisper API with the converted audio file
-  // 3. Return the transcription
 
   const inputDir = path.dirname(audioPath);
   const outputPath = path.join(
@@ -65,7 +61,7 @@ export async function transcribeAudio(audioPath, username) {
       model: "whisper-1",
       language: "tr", // Set to Turkish for Turkish audio
     });
-    
+
     return transcription.text;
   } catch (error) {
     console.error(`Error with Whisper API:`, error);
